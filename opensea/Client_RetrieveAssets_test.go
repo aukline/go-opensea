@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	c = Client{BaseURL: BaseURLV1}
+	c = NewClient(BaseURLV1)
 )
 
 func TestClient_RetrieveAssets(t *testing.T) {
